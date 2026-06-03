@@ -1,6 +1,6 @@
 - hosts: elevate
   vars:
-    project_path: /opt/frontend/saathi-app
+    project_path: /opt/frontend/saathi-app/saathi-frontend
     root_path: /opt/frontend
 
   tasks:
@@ -17,7 +17,7 @@
 
     - name: Fetch the latest code
       git:
-        repo: https://github.com/ELEVATE-Project/saathi-frontend
+        repo: https://github.com/Vinod-V3/saathi-frontend
         dest: "{{ project_path }}"
         version: "{{ gitBranch }}"
         force: yes
